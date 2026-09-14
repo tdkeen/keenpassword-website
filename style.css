@@ -848,6 +848,7 @@ grid-template-columns: 1fr 1fr;
 grid-column: 1 / -1;
 }
 
+
 }
 
 /* =========================================
@@ -938,4 +939,25 @@ grid-template-columns: 1fr;
 grid-column: auto;
 }
 
+
+}
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-screenshot {
+  display: block !important;
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  margin: 0 auto;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
