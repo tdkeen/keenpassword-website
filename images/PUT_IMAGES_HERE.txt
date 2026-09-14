@@ -1,0 +1,5 @@
+Put your KeenPassword Vault logo and screenshots in this folder.
+
+Expected files:
+- logo.png
+- screenshot-1.png through screenshot-6.png
