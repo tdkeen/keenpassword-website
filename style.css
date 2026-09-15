@@ -961,3 +961,156 @@ grid-column: auto;
   z-index: 1;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
+
+/* =========================================
+CONTACT PAGE
+========================================= */
+
+.contact-hero {
+  padding: 105px 0 120px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(75,198,242,.10),
+      transparent 42%
+    ),
+    var(--bg);
+  min-height: calc(100vh - 76px);
+}
+
+.contact-hero .section-heading {
+  margin-bottom: 45px;
+}
+
+.contact-hero .section-heading h1 {
+  margin: 12px 0 15px;
+  font-size: clamp(42px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+
+.contact-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 38px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.045),
+    rgba(255,255,255,.018)
+  );
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 23px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.optional {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: #0a1721;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #667985;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(99,216,255,.55);
+  box-shadow: 0 0 0 3px rgba(99,216,255,.08);
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group textarea {
+  min-height: 180px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-warning {
+  margin: 5px 0 25px;
+  padding: 14px 16px;
+  border: 1px solid rgba(99,216,255,.14);
+  border-radius: 11px;
+  background: rgba(99,216,255,.045);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.form-warning strong {
+  color: #c9d9e2;
+}
+
+.contact-submit {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+}
+
+.form-note {
+  margin: 14px 0 0;
+  text-align: center;
+  color: #71838f;
+  font-size: 11px;
+}
+
+
+/* =========================================
+CONTACT PAGE — PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contact-hero {
+    padding: 70px 0 80px;
+  }
+
+  .contact-card {
+    padding: 25px 20px;
+    border-radius: 18px;
+  }
+
+  .contact-hero .section-heading {
+    margin-bottom: 32px;
+  }
+
+}
