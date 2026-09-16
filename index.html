@@ -562,10 +562,12 @@
 
     const savedLanguage = localStorage.getItem("preferredLanguage");
 
-    if (!savedLanguage) {
-      const browserLanguages = navigator.languages || [navigator.language];
+    let selectedLanguage = savedLanguage;
 
-      let detectedLanguage = null;
+    /* If no language has been chosen before, detect the browser language */
+
+    if (!selectedLanguage) {
+      const browserLanguages = navigator.languages || [navigator.language];
 
       for (const language of browserLanguages) {
         const normalizedLanguage = language.toLowerCase();
@@ -573,31 +575,32 @@
         /* Handle Portuguese variants separately */
 
         if (normalizedLanguage.startsWith("pt-br")) {
-          detectedLanguage = "pt-BR";
+          selectedLanguage = "pt-BR";
           break;
         }
 
         if (normalizedLanguage.startsWith("pt-pt")) {
-          detectedLanguage = "pt-PT";
+          selectedLanguage = "pt-PT";
           break;
         }
 
-        /* Handle other languages by their primary language code */
+        /* Handle other supported languages */
 
         const languageCode = normalizedLanguage.split("-")[0];
 
         if (languagePaths[languageCode]) {
-          detectedLanguage = languageCode;
+          selectedLanguage = languageCode;
           break;
         }
       }
-
-      /* Redirect only when a supported non-English language is detected */
-
-      if (detectedLanguage && detectedLanguage !== "en") {
-        window.location.href = languagePaths[detectedLanguage];
-      }
     }
+
+    /* Redirect to the selected language if it is not English */
+
+    if (selectedLanguage && selectedLanguage !== "en") {
+      window.location.href = languagePaths[selectedLanguage];
+    }
+
 
 
     /* LANGUAGE SELECTOR */
