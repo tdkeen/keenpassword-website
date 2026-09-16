@@ -546,155 +546,121 @@
   <!-- LIGHTBOX JAVASCRIPT -->
 
   <script>
-    /* LANGUAGE DETECTION */
+  /* LANGUAGE DETECTION */
 
-    const languagePaths = {
-      en: "./",
-      de: "./de/",
-      es: "./es/",
-      fr: "./fr/",
-      it: "./it/",
-      nl: "./nl/",
-      pl: "./pl/",
-      "pt-BR": "./pt-br/",
-      "pt-PT": "./pt-pt/"
-    };
+  const languagePaths = {
+    de: "./de/",
+    es: "./es/",
+    fr: "./fr/",
+    it: "./it/",
+    nl: "./nl/",
+    pl: "./pl/",
+    "pt-BR": "./pt-br/",
+    "pt-PT": "./pt-pt/"
+  };
 
-    const savedLanguage = localStorage.getItem("preferredLanguage");
+  const browserLanguages = navigator.languages || [navigator.language];
 
-    let selectedLanguage = savedLanguage;
+  let detectedLanguage = null;
 
-    /* If no language has been chosen before, detect the browser language */
+  for (const language of browserLanguages) {
+    const normalizedLanguage = language.toLowerCase();
 
-    if (!selectedLanguage) {
-      const browserLanguages = navigator.languages || [navigator.language];
+    /* Handle Portuguese variants separately */
 
-      for (const language of browserLanguages) {
-        const normalizedLanguage = language.toLowerCase();
-
-        /* Handle Portuguese variants separately */
-
-        if (normalizedLanguage.startsWith("pt-br")) {
-          selectedLanguage = "pt-BR";
-          break;
-        }
-
-        if (normalizedLanguage.startsWith("pt-pt")) {
-          selectedLanguage = "pt-PT";
-          break;
-        }
-
-        /* Handle other supported languages */
-
-        const languageCode = normalizedLanguage.split("-")[0];
-
-        if (languagePaths[languageCode]) {
-          selectedLanguage = languageCode;
-          break;
-        }
-      }
+    if (normalizedLanguage.startsWith("pt-br")) {
+      detectedLanguage = "pt-BR";
+      break;
     }
 
-    /* Redirect to the selected language if it is not English */
-
-    if (selectedLanguage && selectedLanguage !== "en") {
-      window.location.href = languagePaths[selectedLanguage];
+    if (normalizedLanguage.startsWith("pt-pt")) {
+      detectedLanguage = "pt-PT";
+      break;
     }
 
+    /* Handle other supported languages */
 
+    const languageCode = normalizedLanguage.split("-")[0];
 
-    /* LANGUAGE SELECTOR */
-
-    const languageButton = document.querySelector(".language-button");
-    const languageSelector = document.querySelector(".language-selector");
-
-    languageButton.addEventListener("click", () => {
-      const isOpen = languageSelector.classList.toggle("open");
-      languageButton.setAttribute("aria-expanded", isOpen);
-    });
-
-    /* Remember the language selected manually */
-
-    document.querySelectorAll(".language-menu a").forEach(link => {
-      link.addEventListener("click", () => {
-        const href = link.getAttribute("href");
-
-        const languageMap = {
-          "./": "en",
-          "de/": "de",
-          "es/": "es",
-          "fr/": "fr",
-          "it/": "it",
-          "nl/": "nl",
-          "pl/": "pl",
-          "pt-br/": "pt-BR",
-          "pt-pt/": "pt-PT"
-        };
-
-        const language = languageMap[href];
-
-        if (language) {
-          localStorage.setItem("preferredLanguage", language);
-        }
-      });
-    });
-
-    document.addEventListener("click", event => {
-      if (!languageSelector.contains(event.target)) {
-        languageSelector.classList.remove("open");
-        languageButton.setAttribute("aria-expanded", "false");
-      }
-    });
-
-
-    /* LIGHTBOX */
-
-    const screenshotButtons = document.querySelectorAll(".screenshot-button");
-    const lightbox = document.getElementById("screenshot-lightbox");
-    const lightboxImage = document.getElementById("lightbox-image");
-    const lightboxClose = document.querySelector(".lightbox-close");
-    const lightboxBackdrop = document.querySelector(".lightbox-backdrop");
-
-    function openLightbox(image, alt) {
-      lightboxImage.src = image;
-      lightboxImage.alt = alt;
-
-      lightbox.classList.add("active");
-      lightbox.setAttribute("aria-hidden", "false");
-
-      document.body.classList.add("lightbox-open");
-
-      lightboxClose.focus();
+    if (languagePaths[languageCode]) {
+      detectedLanguage = languageCode;
+      break;
     }
+  }
 
-    function closeLightbox() {
-      lightbox.classList.remove("active");
-      lightbox.setAttribute("aria-hidden", "true");
+  /* Redirect only for supported non-English languages */
 
-      document.body.classList.remove("lightbox-open");
+  if (detectedLanguage) {
+    window.location.href = languagePaths[detectedLanguage];
+  }
 
-      lightboxImage.src = "";
-      lightboxImage.alt = "";
+
+  /* LANGUAGE SELECTOR */
+
+  const languageButton = document.querySelector(".language-button");
+  const languageSelector = document.querySelector(".language-selector");
+
+  languageButton.addEventListener("click", () => {
+    const isOpen = languageSelector.classList.toggle("open");
+    languageButton.setAttribute("aria-expanded", isOpen);
+  });
+
+  document.addEventListener("click", event => {
+    if (!languageSelector.contains(event.target)) {
+      languageSelector.classList.remove("open");
+      languageButton.setAttribute("aria-expanded", "false");
     }
+  });
 
-    screenshotButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        openLightbox(
-          button.dataset.image,
-          button.dataset.alt
-        );
-      });
+
+  /* LIGHTBOX */
+
+  const screenshotButtons = document.querySelectorAll(".screenshot-button");
+  const lightbox = document.getElementById("screenshot-lightbox");
+  const lightboxImage = document.getElementById("lightbox-image");
+  const lightboxClose = document.querySelector(".lightbox-close");
+  const lightboxBackdrop = document.querySelector(".lightbox-backdrop");
+
+  function openLightbox(image, alt) {
+    lightboxImage.src = image;
+    lightboxImage.alt = alt;
+
+    lightbox.classList.add("active");
+    lightbox.setAttribute("aria-hidden", "false");
+
+    document.body.classList.add("lightbox-open");
+
+    lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    lightbox.setAttribute("aria-hidden", "true");
+
+    document.body.classList.remove("lightbox-open");
+
+    lightboxImage.src = "";
+    lightboxImage.alt = "";
+  }
+
+  screenshotButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      openLightbox(
+        button.dataset.image,
+        button.dataset.alt
+      );
     });
+  });
 
-    lightboxClose.addEventListener("click", closeLightbox);
-    lightboxBackdrop.addEventListener("click", closeLightbox);
+  lightboxClose.addEventListener("click", closeLightbox);
+  lightboxBackdrop.addEventListener("click", closeLightbox);
 
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && lightbox.classList.contains("active")) {
-        closeLightbox();
-      }
-    });
-  </script>
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+</script>
 
 
   <!-- <script>
