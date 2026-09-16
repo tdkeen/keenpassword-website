@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Privacy Policy — KeenPassword Vault</title>
-  
+
   <link rel="icon" type="image/png" href="images/favicon.png">
-  
-  <meta
-    name="description"
-    content="Privacy Policy for KeenPassword Vault by KeenApps."
-  >
+
+  <meta name="description" content="Privacy Policy for KeenPassword Vault by KeenApps.">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,11 +21,7 @@
       <div class="nav-wrap">
 
         <a class="brand" href="index.html">
-          <img
-            src="images/logo.png"
-            alt="KeenPassword Vault"
-            class="brand-logo"
-          >
+          <img src="images/logo.png" alt="KeenPassword Vault" class="brand-logo">
           <span>KeenPassword Vault</span>
         </a>
 
@@ -36,10 +30,7 @@
           <a href="index.html#screenshots">Screenshots</a>
           <a href="index.html#faq">FAQ</a>
           <a href="contact.html">Contact & Support</a>
-          <a
-            class="nav-store"
-            href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4"
-          >
+          <a class="nav-store" href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
             Microsoft Store
           </a>
         </nav>
@@ -224,5 +215,59 @@
     </div>
   </footer>
 
+
+  <!-- LANGUAGE DETECTION -->
+
+  <script>
+    const languagePaths = {
+      de: "./de/",
+      es: "./es/",
+      fr: "./fr/",
+      it: "./it/",
+      nl: "./nl/",
+      pl: "./pl/",
+      "pt-BR": "./pt-br/",
+      "pt-PT": "./pt-pt/"
+    };
+
+    const browserLanguages = navigator.languages || [navigator.language];
+
+    let detectedLanguage = null;
+
+    for (const language of browserLanguages) {
+      const normalizedLanguage = language.toLowerCase();
+
+      /* Handle Portuguese variants separately */
+
+      if (normalizedLanguage.startsWith("pt-br")) {
+        detectedLanguage = "pt-BR";
+        break;
+      }
+
+      if (normalizedLanguage.startsWith("pt-pt")) {
+        detectedLanguage = "pt-PT";
+        break;
+      }
+
+      /* Handle other supported languages */
+
+      const languageCode = normalizedLanguage.split("-")[0];
+
+      if (languagePaths[languageCode]) {
+        detectedLanguage = languageCode;
+        break;
+      }
+    }
+
+    /* Redirect only for supported non-English languages */
+
+    if (detectedLanguage) {
+      window.location.href = languagePaths[detectedLanguage];
+    }
+  </script>
+
+
+
 </body>
+
 </html>
