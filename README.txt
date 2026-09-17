@@ -1,47 +1,81 @@
-KeenPassword Vault Website
-===========================
+# KeenPassword Vault Website
 
-This is the updated static website for KeenPassword Vault.
+Official website for KeenPassword Vault, a privacy-focused password manager for Windows.
 
-FILES
------
-index.html   Main webpage
-style.css    Website styling
-images/      Put your logo and screenshots here
+## WEBSITE
 
-BEFORE PUBLISHING
------------------
-1. Replace YOUR_MICROSOFT_STORE_URL in index.html with the full Microsoft Store listing URL.
-   There are several occurrences; replacing all of them is easiest.
+The website is a static HTML/CSS site with no server-side application or database.
 
-2. Add your app logo as:
-   images/logo.png
+The site includes:
 
-3. Add up to six screenshots as:
-   images/screenshot-1.png
-   images/screenshot-2.png
-   images/screenshot-3.png
-   images/screenshot-4.png
-   images/screenshot-5.png
-   images/screenshot-6.png
+* Product overview and feature information
+* Screenshots
+* Frequently asked questions
+* Privacy policy
+* Contact and support form
+* Contact confirmation page
+* Microsoft Store link
+* Localized versions in multiple languages
 
-   Suggested screenshot order:
-   1 = Vault overview
-   2 = Password management/details
-   3 = Secure Notes
-   4 = Breach Scan
-   5 = Backup Manager
-   6 = Themes/settings
+## LANGUAGES
 
-4. Open index.html in VS Code's Live Server (or your normal browser) to test it.
+The website is available in:
 
-5. The Microsoft Store URL is the only important link that must be replaced before launch.
+* English
+* German
+* Spanish
+* French
+* Italian
+* Dutch
+* Polish
+* Portuguese (Brazil)
+* Portuguese (Portugal)
 
-IMPORTANT
----------
-The website copy is based on the current Microsoft Store description and feature list you provided.
-Before publishing, make sure every security/privacy statement remains accurate for the released build.
+## STRUCTURE
 
-The site intentionally does not include a contact form in this version because the primary goal is a clean product landing page. A contact form can be added later if you want one.
+index.html                 Main English webpage
+contact.html               English contact and support page
+contact-thank-you.html     English contact confirmation page
+privacy_policy.html        English privacy policy
+style.css                  Website styling
+images/                    Logo, favicon, and screenshots
 
-The website is static HTML/CSS and can be hosted on many free static-hosting services.
+Language-specific pages are contained in their respective subdirectories:
+
+de/                        German
+es/                        Spanish
+fr/                        French
+it/                        Italian
+nl/                        Dutch
+pl/                        Polish
+pt-br/                     Portuguese (Brazil)
+pt-pt/                     Portuguese (Portugal)
+
+Each localized directory contains its own translated pages and uses the shared
+images and stylesheet from the parent directory.
+
+## CONTACT FORM
+
+The contact form uses Web3Forms to process support messages.
+
+Successful submissions are handled by JavaScript and redirected to the
+appropriate language-specific contact confirmation page.
+
+The form is available on each localized version of the website.
+
+## HOSTING
+
+The website consists of static HTML and CSS and can be hosted using a static
+web hosting service.
+
+## DEVELOPMENT
+
+The site can be tested locally using VS Code with Live Server or by opening
+the HTML files directly in a browser.
+
+## IMPORTANT
+
+Keep the website's security, privacy, and feature descriptions consistent with
+the functionality of the released KeenPassword Vault application.
+
+Microsoft Store links should point to the official KeenPassword Vault listing.
