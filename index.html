@@ -533,9 +533,12 @@
             Keep your encrypted vault local, private, and under your control.
           </p>
 
-          <a class="button primary large" href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
-            Get KeenPassword Vault
-          </a>
+
+          <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+          <ms-store-badge productid="9nbshvgtkbz4" productname="KeenPassword Vault" window-mode="direct" theme="auto"
+            size="medium" language="en-us" animation="on">
+          </ms-store-badge>
+          
         </div>
 
       </div>
@@ -685,69 +688,6 @@
       }
     });
   </script>
-
-
-  <!-- <script>
-    const languageButton = document.querySelector(".language-button");
-    const languageSelector = document.querySelector(".language-selector");
-
-    languageButton.addEventListener("click", () => {
-      const isOpen = languageSelector.classList.toggle("open");
-      languageButton.setAttribute("aria-expanded", isOpen);
-    });
-
-    document.addEventListener("click", event => {
-      if (!languageSelector.contains(event.target)) {
-        languageSelector.classList.remove("open");
-        languageButton.setAttribute("aria-expanded", "false");
-      }
-    });
-    const screenshotButtons = document.querySelectorAll(".screenshot-button");
-    const lightbox = document.getElementById("screenshot-lightbox");
-    const lightboxImage = document.getElementById("lightbox-image");
-    const lightboxClose = document.querySelector(".lightbox-close");
-    const lightboxBackdrop = document.querySelector(".lightbox-backdrop");
-
-    function openLightbox(image, alt) {
-      lightboxImage.src = image;
-      lightboxImage.alt = alt;
-
-      lightbox.classList.add("active");
-      lightbox.setAttribute("aria-hidden", "false");
-
-      document.body.classList.add("lightbox-open");
-
-      lightboxClose.focus();
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove("active");
-      lightbox.setAttribute("aria-hidden", "true");
-
-      document.body.classList.remove("lightbox-open");
-
-      lightboxImage.src = "";
-      lightboxImage.alt = "";
-    }
-
-    screenshotButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        openLightbox(
-          button.dataset.image,
-          button.dataset.alt
-        );
-      });
-    });
-
-    lightboxClose.addEventListener("click", closeLightbox);
-    lightboxBackdrop.addEventListener("click", closeLightbox);
-
-    document.addEventListener("keydown", event => {
-      if (event.key === "Escape" && lightbox.classList.contains("active")) {
-        closeLightbox();
-      }
-    });
-  </script> -->
 
 </body>
 
