@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Contatta il supporto di KeenPassword Vault. Fai una domanda, segnala un problema o invia un suggerimento per una funzionalità."
-  >
+<meta
+name="description"
+content="Contatta il supporto di KeenPassword Vault. Fai una domanda, segnala un problema o invia un suggerimento per una funzionalità."
+
+>
 
   <title>Contatti e supporto — KeenPassword Vault</title>
 
@@ -23,230 +24,297 @@
   <header class="site-header">
     <div class="container nav-wrap">
 
-      <a class="brand" href="index.html">
-        <img
-          src="../images/logo.png"
-          alt="Logo di KeenPassword Vault"
-          onerror="this.style.display='none'"
-        >
-        <span>KeenPassword <strong>Vault</strong></span>
-      </a>
 
-      <nav>
-        <a href="privacy_policy.html">Informativa sulla privacy</a>
-        <a href="index.html#features">Funzionalità</a>
-        <a href="index.html#screenshots">Screenshot</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="contact.html">Contatti e supporto</a>
-        <a
-          class="nav-store"
-          href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4"
-        >
-          Microsoft Store
-        </a>
-      </nav>
+  <a class="brand" href="index.html">
+    <img
+      src="../images/logo.png"
+      alt="Logo di KeenPassword Vault"
+      onerror="this.style.display='none'"
+    >
+    <span>KeenPassword <strong>Vault</strong></span>
+  </a>
 
-    </div>
+  <nav>
+    <a href="privacy_policy.html">Informativa sulla privacy</a>
+    <a href="index.html#features">Funzionalità</a>
+    <a href="index.html#screenshots">Screenshot</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="contact.html">Contatti e supporto</a>
+    <a
+      class="nav-store"
+      href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4"
+    >
+      Microsoft Store
+    </a>
+  </nav>
+
+</div>
+
+
   </header>
-
 
   <!-- CONTACT PAGE -->
 
   <main>
 
-    <section class="contact-hero">
 
-      <div class="container narrow">
+<section class="contact-hero">
 
-        <div class="section-heading center">
+  <div class="container narrow">
 
-          <div class="section-kicker">
-            CONTATTI E SUPPORTO
-          </div>
+    <div class="section-heading center">
 
-          <h1>Come possiamo aiutarti?</h1>
-
-          <p>
-            Hai una domanda, hai trovato un problema o hai un suggerimento?
-            Inviaci un messaggio e ti risponderemo.
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-
-            <!-- Web3Forms access key -->
-
-            <input
-              type="hidden"
-              name="access_key"
-              value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
-            >
-
-
-            <!-- Form subject -->
-
-            <input
-              type="hidden"
-              name="subject"
-              value="Modulo di contatto KeenPassword Vault"
-            >
-
-
-            <div class="form-group">
-
-              <label for="name">
-                Nome
-                <span class="optional">(facoltativo)</span>
-              </label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                placeholder="Il tuo nome"
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="email">
-                E-mail
-              </label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                placeholder="tu@esempio.com"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="topic">
-                Argomento
-              </label>
-
-              <select
-                id="topic"
-                name="topic"
-                required
-              >
-
-                <option value="" disabled selected>
-                  Seleziona un argomento
-                </option>
-
-                <option value="General Question">
-                  Domanda generale
-                </option>
-
-                <option value="Bug Report">
-                  Segnalazione di un problema
-                </option>
-
-                <option value="Feature Suggestion">
-                  Suggerimento per una funzionalità
-                </option>
-
-                <option value="Other">
-                  Altro
-                </option>
-
-              </select>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="message">
-                Messaggio
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="8"
-                placeholder="Come possiamo aiutarti?"
-                required
-              ></textarea>
-
-            </div>
-
-
-            <div class="form-warning">
-              <strong>Promemoria sulla privacy:</strong>
-              non includere password, password principale,
-              chiavi di recupero o altre informazioni sensibili nel tuo messaggio.
-            </div>
-
-
-            <button
-              type="submit"
-              class="button primary contact-submit"
-            >
-              Invia messaggio
-            </button>
-
-
-            <p class="form-note">
-              Il tuo indirizzo e-mail viene utilizzato per consentirci di rispondere al tuo messaggio.
-            </p>
-
-          </form>
-
-        </div>
-
+      <div class="section-kicker">
+        CONTATTI E SUPPORTO
       </div>
 
-    </section>
+      <h1>Come possiamo aiutarti?</h1>
+
+      <p>
+        Hai una domanda, hai trovato un problema o hai un suggerimento?
+        Inviaci un messaggio e ti risponderemo.
+      </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+
+        <!-- Web3Forms access key -->
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
+        >
+
+
+        <!-- Form subject -->
+
+        <input
+          type="hidden"
+          name="subject"
+          value="Modulo di contatto KeenPassword Vault"
+        >
+
+
+        <div class="form-group">
+
+          <label for="name">
+            Nome
+            <span class="optional">(facoltativo)</span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            placeholder="Il tuo nome"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="email">
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="tu@esempio.com"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="topic">
+            Argomento
+          </label>
+
+          <select
+            id="topic"
+            name="topic"
+            required
+          >
+
+            <option value="" disabled selected>
+              Seleziona un argomento
+            </option>
+
+            <option value="General Question">
+              Domanda generale
+            </option>
+
+            <option value="Bug Report">
+              Segnalazione di un problema
+            </option>
+
+            <option value="Feature Suggestion">
+              Suggerimento per una funzionalità
+            </option>
+
+            <option value="Other">
+              Altro
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="message">
+            Messaggio
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            placeholder="Come possiamo aiutarti?"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="form-warning">
+          <strong>Promemoria sulla privacy:</strong>
+          non includere password, password principale,
+          chiavi di recupero o altre informazioni sensibili nel tuo messaggio.
+        </div>
+
+
+        <button
+          type="submit"
+          class="button primary contact-submit"
+        >
+          Invia messaggio
+        </button>
+
+
+        <p class="form-note">
+          Il tuo indirizzo e-mail viene utilizzato per consentirci di rispondere al tuo messaggio.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
 
   </main>
-
 
   <!-- FOOTER -->
 
   <footer>
 
-    <div class="container footer-wrap">
 
-      <div>
-        <strong>KeenPassword Vault</strong><br>
-        <span>Gestione delle password incentrata sulla privacy per Windows.</span>
-      </div>
+<div class="container footer-wrap">
 
-      <div class="footer-links">
-        <a href="privacy_policy.html">Informativa sulla privacy</a>
-        <a href="index.html#features">Funzionalità</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="contact.html">Contatti e supporto</a>
-        <a href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
-          Microsoft Store
-        </a>
-      </div>
+  <div>
+    <strong>KeenPassword Vault</strong><br>
+    <span>Gestione delle password incentrata sulla privacy per Windows.</span>
+  </div>
 
-      <div>
-        © 2026 KeenApps. Tutti i diritti riservati.
-      </div>
+  <div class="footer-links">
+    <a href="privacy_policy.html">Informativa sulla privacy</a>
+    <a href="index.html#features">Funzionalità</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="contact.html">Contatti e supporto</a>
+    <a href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
+      Microsoft Store
+    </a>
+  </div>
 
-    </div>
+  <div>
+    © 2026 KeenApps. Tutti i diritti riservati.
+  </div>
+
+</div>
+
 
   </footer>
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", async function (event) {
+
+      /* Stop the browser from navigating to Web3Forms */
+
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector(".contact-submit");
+
+      /* Prevent multiple submissions */
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Invio in corso…";
+
+      try {
+
+        const formData = new FormData(contactForm);
+
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+
+          /* Message was successfully sent */
+
+          window.location.href = "contact-thank-you.html";
+
+        } else {
+
+          /* Web3Forms returned an error */
+
+          alert("Si è verificato un problema durante l'invio del messaggio. Riprova.");
+
+          submitButton.disabled = false;
+          submitButton.textContent = "Invia messaggio";
+
+        }
+
+      } catch (error) {
+
+        /* Network or other unexpected error */
+
+        alert("Si è verificato un problema durante l'invio del messaggio. Riprova.");
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Invia messaggio";
+
+      }
+
+    });
+  </script>
 
 </body>
 </html>

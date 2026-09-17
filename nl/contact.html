@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Neem contact op met de ondersteuning van KeenPassword Vault. Stel een vraag, meld een probleem of stuur een suggestie voor een functie."
-  >
+<meta
+name="description"
+content="Neem contact op met de ondersteuning van KeenPassword Vault. Stel een vraag, meld een probleem of stuur een suggestie voor een functie."
+
+>
 
   <title>Contact en ondersteuning — KeenPassword Vault</title>
 
@@ -23,230 +24,297 @@
   <header class="site-header">
     <div class="container nav-wrap">
 
-      <a class="brand" href="index.html">
-        <img
-          src="../images/logo.png"
-          alt="KeenPassword Vault-logo"
-          onerror="this.style.display='none'"
-        >
-        <span>KeenPassword <strong>Vault</strong></span>
-      </a>
 
-      <nav>
-        <a href="privacy_policy.html">Privacybeleid</a>
-        <a href="index.html#features">Functies</a>
-        <a href="index.html#screenshots">Schermafbeeldingen</a>
-        <a href="index.html#faq">Veelgestelde vragen</a>
-        <a href="contact.html">Contact en ondersteuning</a>
-        <a
-          class="nav-store"
-          href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4"
-        >
-          Microsoft Store
-        </a>
-      </nav>
+  <a class="brand" href="index.html">
+    <img
+      src="../images/logo.png"
+      alt="KeenPassword Vault-logo"
+      onerror="this.style.display='none'"
+    >
+    <span>KeenPassword <strong>Vault</strong></span>
+  </a>
 
-    </div>
+  <nav>
+    <a href="privacy_policy.html">Privacybeleid</a>
+    <a href="index.html#features">Functies</a>
+    <a href="index.html#screenshots">Schermafbeeldingen</a>
+    <a href="index.html#faq">Veelgestelde vragen</a>
+    <a href="contact.html">Contact en ondersteuning</a>
+    <a
+      class="nav-store"
+      href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4"
+    >
+      Microsoft Store
+    </a>
+  </nav>
+
+</div>
+
+
   </header>
-
 
   <!-- CONTACT PAGE -->
 
   <main>
 
-    <section class="contact-hero">
 
-      <div class="container narrow">
+<section class="contact-hero">
 
-        <div class="section-heading center">
+  <div class="container narrow">
 
-          <div class="section-kicker">
-            CONTACT EN ONDERSTEUNING
-          </div>
+    <div class="section-heading center">
 
-          <h1>Hoe kunnen we u helpen?</h1>
-
-          <p>
-            Heeft u een vraag, een probleem gevonden of een suggestie?
-            Stuur ons een bericht en we nemen contact met u op.
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-
-            <!-- Web3Forms access key -->
-
-            <input
-              type="hidden"
-              name="access_key"
-              value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
-            >
-
-
-            <!-- Form subject -->
-
-            <input
-              type="hidden"
-              name="subject"
-              value="KeenPassword Vault-contactformulier"
-            >
-
-
-            <div class="form-group">
-
-              <label for="name">
-                Naam
-                <span class="optional">(optioneel)</span>
-              </label>
-
-              <input
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="name"
-                placeholder="Uw naam"
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="email">
-                E-mail
-              </label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autocomplete="email"
-                placeholder="u@voorbeeld.nl"
-                required
-              >
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="topic">
-                Onderwerp
-              </label>
-
-              <select
-                id="topic"
-                name="topic"
-                required
-              >
-
-                <option value="" disabled selected>
-                  Selecteer een onderwerp
-                </option>
-
-                <option value="General Question">
-                  Algemene vraag
-                </option>
-
-                <option value="Bug Report">
-                  Probleem melden
-                </option>
-
-                <option value="Feature Suggestion">
-                  Suggestie voor een functie
-                </option>
-
-                <option value="Other">
-                  Anders
-                </option>
-
-              </select>
-
-            </div>
-
-
-            <div class="form-group">
-
-              <label for="message">
-                Bericht
-              </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="8"
-                placeholder="Hoe kunnen we u helpen?"
-                required
-              ></textarea>
-
-            </div>
-
-
-            <div class="form-warning">
-              <strong>Privacyherinnering:</strong>
-              vermeld geen wachtwoorden, hoofdwachtwoorden,
-              herstelsleutels of andere gevoelige informatie in uw bericht.
-            </div>
-
-
-            <button
-              type="submit"
-              class="button primary contact-submit"
-            >
-              Bericht verzenden
-            </button>
-
-
-            <p class="form-note">
-              Uw e-mailadres wordt gebruikt zodat we op uw bericht kunnen reageren.
-            </p>
-
-          </form>
-
-        </div>
-
+      <div class="section-kicker">
+        CONTACT EN ONDERSTEUNING
       </div>
 
-    </section>
+      <h1>Hoe kunnen we u helpen?</h1>
+
+      <p>
+        Heeft u een vraag, een probleem gevonden of een suggestie?
+        Stuur ons een bericht en we nemen contact met u op.
+      </p>
+
+    </div>
+
+
+    <div class="contact-card">
+
+      <form
+        id="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+
+        <!-- Web3Forms access key -->
+
+        <input
+          type="hidden"
+          name="access_key"
+          value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
+        >
+
+
+        <!-- Form subject -->
+
+        <input
+          type="hidden"
+          name="subject"
+          value="KeenPassword Vault-contactformulier"
+        >
+
+
+        <div class="form-group">
+
+          <label for="name">
+            Naam
+            <span class="optional">(optioneel)</span>
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            placeholder="Uw naam"
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="email">
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="u@voorbeeld.nl"
+            required
+          >
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="topic">
+            Onderwerp
+          </label>
+
+          <select
+            id="topic"
+            name="topic"
+            required
+          >
+
+            <option value="" disabled selected>
+              Selecteer een onderwerp
+            </option>
+
+            <option value="General Question">
+              Algemene vraag
+            </option>
+
+            <option value="Bug Report">
+              Probleem melden
+            </option>
+
+            <option value="Feature Suggestion">
+              Suggestie voor een functie
+            </option>
+
+            <option value="Other">
+              Anders
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="message">
+            Bericht
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            placeholder="Hoe kunnen we u helpen?"
+            required
+          ></textarea>
+
+        </div>
+
+
+        <div class="form-warning">
+          <strong>Privacyherinnering:</strong>
+          vermeld geen wachtwoorden, hoofdwachtwoorden,
+          herstelsleutels of andere gevoelige informatie in uw bericht.
+        </div>
+
+
+        <button
+          type="submit"
+          class="button primary contact-submit"
+        >
+          Bericht verzenden
+        </button>
+
+
+        <p class="form-note">
+          Uw e-mailadres wordt gebruikt zodat we op uw bericht kunnen reageren.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
 
   </main>
-
 
   <!-- FOOTER -->
 
   <footer>
 
-    <div class="container footer-wrap">
 
-      <div>
-        <strong>KeenPassword Vault</strong><br>
-        <span>Privacygerichte wachtwoordbeheer voor Windows.</span>
-      </div>
+<div class="container footer-wrap">
 
-      <div class="footer-links">
-        <a href="privacy_policy.html">Privacybeleid</a>
-        <a href="index.html#features">Functies</a>
-        <a href="index.html#faq">Veelgestelde vragen</a>
-        <a href="contact.html">Contact en ondersteuning</a>
-        <a href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
-          Microsoft Store
-        </a>
-      </div>
+  <div>
+    <strong>KeenPassword Vault</strong><br>
+    <span>Privacygerichte wachtwoordbeheer voor Windows.</span>
+  </div>
 
-      <div>
-        © 2026 KeenApps. Alle rechten voorbehouden.
-      </div>
+  <div class="footer-links">
+    <a href="privacy_policy.html">Privacybeleid</a>
+    <a href="index.html#features">Functies</a>
+    <a href="index.html#faq">Veelgestelde vragen</a>
+    <a href="contact.html">Contact en ondersteuning</a>
+    <a href="https://apps.microsoft.com/detail/9NBSHVGTKBZ4">
+      Microsoft Store
+    </a>
+  </div>
 
-    </div>
+  <div>
+    © 2026 KeenApps. Alle rechten voorbehouden.
+  </div>
+
+</div>
+
 
   </footer>
+
+  <script>
+    const contactForm = document.getElementById("contact-form");
+
+    contactForm.addEventListener("submit", async function (event) {
+
+      /* Stop the browser from navigating to Web3Forms */
+
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector(".contact-submit");
+
+      /* Prevent multiple submissions */
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Bezig met verzenden…";
+
+      try {
+
+        const formData = new FormData(contactForm);
+
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "Accept": "application/json"
+          }
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+
+          /* Message was successfully sent */
+
+          window.location.href = "contact-thank-you.html";
+
+        } else {
+
+          /* Web3Forms returned an error */
+
+          alert("Er is een probleem opgetreden bij het verzenden van uw bericht. Probeer het opnieuw.");
+
+          submitButton.disabled = false;
+          submitButton.textContent = "Bericht verzenden";
+
+        }
+
+      } catch (error) {
+
+        /* Network or other unexpected error */
+
+        alert("Er is een probleem opgetreden bij het verzenden van uw bericht. Probeer het opnieuw.");
+
+        submitButton.disabled = false;
+        submitButton.textContent = "Bericht verzenden";
+
+      }
+
+    });
+  </script>
 
 </body>
 </html>
