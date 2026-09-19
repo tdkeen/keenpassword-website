@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Was ist AES-256-GCM-Verschlüsselung? | KeenPassword Vault</title>
+
+  <meta
+    name="description"
+    content="Erfahren Sie, was AES-256-GCM-Verschlüsselung ist, wie sie vertrauliche Daten schützt und warum authentifizierte Verschlüsselung für Passwort-Manager wichtig ist."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://keenpasswordvault.com/de/blog/what-is-aes-256-gcm-encryption.html"
+  >
+
+  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Was ist AES-256-GCM-Verschlüsselung?">
+  <meta
+    property="og:description"
+    content="Erfahren Sie, was AES-256-GCM-Verschlüsselung ist, wie sie vertrauliche Daten schützt und warum authentifizierte Verschlüsselung wichtig ist."
+  >
+  <meta
+    property="og:url"
+    content="https://keenpasswordvault.com/de/blog/what-is-aes-256-gcm-encryption.html"
+  >
+  <meta property="og:site_name" content="KeenPassword Vault">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="../index.html">
+        <img
+          src="../../images/logo.png"
+          alt="KeenPassword Vault Logo"
+          onerror="this.style.display='none'"
+        >
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
+
+      <nav>
+        <a href="../index.html#features">Funktionen</a>
+        <a href="../index.html#screenshots">Screenshots</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./" aria-current="page">Blog</a>
+        <a href="../contact.html">Kontakt &amp; Support</a>
+        <a href="../privacy_policy.html">Datenschutzerklärung</a>
+
+        <div class="language-selector">
+          <button
+            type="button"
+            class="language-button"
+            aria-expanded="false"
+          >
+            Sprache ▾
+          </button>
+
+          <div class="language-menu">
+            <a href="../../">English</a>
+            <a href="../../de/">Deutsch</a>
+            <a href="../../es/">Español</a>
+            <a href="../../fr/">Français</a>
+            <a href="../../it/">Italiano</a>
+            <a href="../../nl/">Nederlands</a>
+            <a href="../../pl/">Polski</a>
+            <a href="../../pt-br/">Português (Brasil)</a>
+            <a href="../../pt-pt/">Português (Portugal)</a>
+          </div>
+        </div>
+
+        <a
+          class="nav-store"
+          href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
+        >
+          Microsoft Store
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <article class="blog-article">
+
+      <header class="article-header">
+
+        <a class="back-to-blog" href="./">
+          ← Zurück zum Blog
+        </a>
+
+        <p class="article-date">September 2026</p>
+
+        <h1>Was ist AES-256-GCM-Verschlüsselung?</h1>
+
+        <p class="article-intro">
+          Verschlüsselung gehört zu den wichtigsten Technologien zum Schutz
+          vertraulicher Informationen. Passwort-Manager verwenden
+          Verschlüsselung, um gespeicherte Passwörter und andere private Daten
+          zu schützen. Eine Verschlüsselungsmethode, auf die Sie möglicherweise
+          stoßen, ist AES-256-GCM. Aber was bedeutet das eigentlich?
+        </p>
+
+      </header>
+
+
+      <div class="article-content">
+
+        <h2>Was ist AES?</h2>
+
+        <p>
+          AES steht für <strong>Advanced Encryption Standard</strong>. Dabei
+          handelt es sich um einen weit verbreiteten symmetrischen
+          Verschlüsselungsalgorithmus, der Informationen schützt, indem er
+          lesbare Daten in eine verschlüsselte Form umwandelt.
+        </p>
+
+        <p>
+          Bei der symmetrischen Verschlüsselung wird derselbe zugrunde liegende
+          geheime Schlüssel zum Ver- und Entschlüsseln der Daten verwendet.
+          Ohne den entsprechenden Schlüssel sollten die verschlüsselten
+          Informationen nicht lesbar sein.
+        </p>
+
+        <p>
+          AES unterstützt Schlüssellängen von 128, 192 und 256 Bit. AES-256
+          bezeichnet die Variante, die einen 256-Bit-Verschlüsselungsschlüssel
+          verwendet.
+        </p>
+
+
+        <h2>Was bedeutet die „256“?</h2>
+
+        <p>
+          Die „256“ in AES-256 bezieht sich auf die Größe des
+          Verschlüsselungsschlüssels: <strong>256 Bit</strong>.
+        </p>
+
+        <p>
+          Ein größerer Schlüssel bietet einen größeren möglichen Schlüsselraum.
+          Dadurch werden vollständige Brute-Force-Angriffe auf den
+          Verschlüsselungsschlüssel mit derzeit bekannten Methoden praktisch
+          undurchführbar, sofern die kryptografische Implementierung und
+          Schlüsselverwaltung ordnungsgemäß umgesetzt sind.
+        </p>
+
+        <p>
+          Wichtig ist, dass sich AES-256 auf die Größe des
+          Verschlüsselungsschlüssels bezieht und nicht auf die Größe der Daten,
+          die verschlüsselt werden.
+        </p>
+
+
+        <h2>Was bedeutet GCM?</h2>
+
+        <p>
+          GCM steht für <strong>Galois/Counter Mode</strong>. Dabei handelt es
+          sich um einen Betriebsmodus, der zusammen mit AES verwendet werden
+          kann, um authentifizierte Verschlüsselung bereitzustellen.
+        </p>
+
+        <p>
+          Das ist wichtig, weil es bei Verschlüsselung nicht nur darum geht,
+          Daten geheim zu halten. Ein System benötigt auch eine Möglichkeit,
+          festzustellen, ob verschlüsselte Daten verändert oder beschädigt
+          wurden.
+        </p>
+
+        <p>
+          AES-GCM bietet beides:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Vertraulichkeit</strong> — hilft dabei, die verschlüsselten
+            Daten privat zu halten.
+          </li>
+          <li>
+            <strong>Integrität und Authentizität</strong> — stellt einen
+            Authentifizierungstag bereit, der überprüft werden kann, um
+            unbefugte Änderungen an den verschlüsselten Daten zu erkennen.
+          </li>
+        </ul>
+
+
+        <h2>Was ist ein Authentifizierungstag?</h2>
+
+        <p>
+          AES-GCM erzeugt zusammen mit den verschlüsselten Daten einen
+          Authentifizierungstag. Dieser ermöglicht es der Anwendung zu
+          überprüfen, ob die verschlüsselten Informationen seit ihrer
+          Erstellung verändert wurden.
+        </p>
+
+        <p>
+          Wenn die verschlüsselten Daten oder zugehörige authentifizierte
+          Informationen verändert werden, kann die Authentifizierung bei der
+          Entschlüsselung fehlschlagen. Die Anwendung kann die Daten dann
+          ablehnen, anstatt möglicherweise veränderte Informationen als gültig
+          zu behandeln.
+        </p>
+
+        <p>
+          Dies bietet eine wichtige zusätzliche Schutzschicht für Anwendungen,
+          die vertrauliche Informationen speichern.
+        </p>
+
+
+        <h2>Warum ist das für Passwort-Manager wichtig?</h2>
+
+        <p>
+          Passwort-Manager speichern Informationen, die äußerst vertraulich
+          sein können, darunter Passwörter, Benutzernamen, sichere Notizen und
+          andere private Informationen.
+        </p>
+
+        <p>
+          Diese Informationen einfach in einer Datei zu speichern, reicht nicht
+          aus. Wenn jemand Zugriff auf den zugrunde liegenden Speicher erhält,
+          sollten die gespeicherten Informationen nicht in lesbarer Form
+          verfügbar sein.
+        </p>
+
+        <p>
+          Verschlüsselung ermöglicht es einem Passwort-Manager, den Tresor in
+          verschlüsselter Form statt als Klartext zu speichern.
+        </p>
+
+        <p>
+          Authentifizierte Verschlüsselung hilft der Anwendung außerdem dabei,
+          unerwartete Änderungen an den verschlüsselten Tresordaten zu
+          erkennen.
+        </p>
+
+
+        <h2>Verschlüsselung ersetzt kein starkes Master-Passwort</h2>
+
+        <p>
+          Eine starke Verschlüsselung ist ein wichtiger Bestandteil zum Schutz
+          eines Passwort-Managers. Sie macht es jedoch nicht überflüssig, den
+          Schlüssel zu schützen, der für den Zugriff auf die verschlüsselten
+          Daten verwendet wird.
+        </p>
+
+        <p>
+          Ein starkes, einzigartiges Master-Passwort ist daher ein wichtiger
+          Bestandteil einer umfassenden Sicherheitsstrategie für einen
+          Passwort-Manager.
+        </p>
+
+        <p>
+          Benutzer sollten außerdem ihre Computer schützen, ihr
+          Betriebssystem und ihre Sicherheitssoftware auf dem aktuellen Stand
+          halten und sinnvolle Verfahren für Sicherungskopien verwenden.
+        </p>
+
+
+        <h2>AES-256-GCM und lokale Verschlüsselung</h2>
+
+        <p>
+          Verschlüsselung kann sowohl dann eingesetzt werden, wenn ein
+          Passwort-Manager seinen Tresor lokal speichert, als auch bei der
+          Nutzung einer Cloud-Infrastruktur. Der wichtige Unterschied besteht
+          darin, wo die verschlüsselten Daten gespeichert werden und wie die
+          Schlüssel verwaltet werden.
+        </p>
+
+        <p>
+          Bei einem lokalen Passwort-Manager kann der verschlüsselte Tresor auf
+          dem eigenen Computer des Benutzers verbleiben, anstatt an einen
+          externen Dienst übertragen zu werden. Dies kann für Menschen
+          interessant sein, die möchten, dass ihr Passwort-Tresor vollständig
+          unter ihrer lokalen Kontrolle bleibt.
+        </p>
+
+
+        <h2>Was AES-256-GCM nicht bedeutet</h2>
+
+        <p>
+          AES-256-GCM ist ein kryptografischer Baustein. Seine Verwendung macht
+          eine Anwendung nicht automatisch sicher.
+        </p>
+
+        <p>
+          Die Gesamtsicherheit einer Anwendung hängt auch davon ab, wie
+          Verschlüsselungsschlüssel abgeleitet und geschützt werden, wie
+          verschlüsselte Daten verarbeitet werden, wie die Authentifizierung
+          umgesetzt ist, wie Sicherungskopien geschützt werden und wie die
+          restliche Anwendung konzipiert ist.
+        </p>
+
+        <p>
+          Mit anderen Worten: Der Algorithmus ist nur ein Teil des gesamten
+          Sicherheitskonzepts.
+        </p>
+
+
+        <h2>AES-256-GCM in KeenPassword Vault</h2>
+
+        <p>
+          KeenPassword Vault verwendet AES-256-GCM, um den lokalen Tresor auf
+          dem Windows-Computer des Benutzers zu verschlüsseln. Der Tresor wird
+          lokal geschützt, anstatt an einen Cloud-Dienst übertragen zu werden.
+        </p>
+
+        <p>
+          KeenPassword Vault ist als Offline-Passwort-Manager konzipiert,
+          sodass Ihre gespeicherten Tresordaten auf Ihrem Computer verbleiben.
+          Die Anwendung benötigt weder ein Online-Konto noch eine
+          Cloud-Synchronisierung oder ein Abonnement.
+        </p>
+
+        <p>
+          Die Verschlüsselung ist Teil eines umfassenderen Sicherheitskonzepts,
+          das lokale Speicherung, ein Master-Passwort, verschlüsselte
+          Sicherungskopien und Funktionen umfasst, die Benutzern dabei helfen
+          sollen, ihren Tresor zu schützen.
+        </p>
+
+
+        <h2>Das Wichtigste zusammengefasst</h2>
+
+        <p>
+          AES-256-GCM kombiniert die AES-Verschlüsselung mit einem Modus für
+          authentifizierte Verschlüsselung. AES-256 verwendet einen
+          256-Bit-Verschlüsselungsschlüssel, während GCM eine authentifizierte
+          Verschlüsselung ermöglicht, mit der sich unbefugte Änderungen an
+          verschlüsselten Daten erkennen lassen.
+        </p>
+
+        <p>
+          Für einen Passwort-Manager sind diese Eigenschaften nützlich, da die
+          Anwendung vertrauliche Informationen schützen und gleichzeitig
+          erkennen können muss, wenn verschlüsselte Daten nicht mehr gültig
+          sind.
+        </p>
+
+        <p>
+          Die Verschlüsselung ist jedoch nur ein Teil der Sicherheit eines
+          Passwort-Managers. Starke Passwörter, eine sichere
+          Schlüsselverwaltung, geschützte Sicherungskopien und eine gute
+          Anwendungsarchitektur tragen ebenfalls zur Gesamtsicherheit eines
+          Passwort-Tresors bei.
+        </p>
+
+      </div>
+
+
+      <footer class="article-footer">
+
+        <a class="back-to-blog" href="./">
+          ← Zurück zum Blog
+        </a>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 KeenApps. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+
+  <script src="../../script.js"></script>
+
+</body>
+</html>
