@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What Is AES-256-GCM Encryption? | KeenPassword Vault</title>
+
+  <meta
+    name="description"
+    content="Learn what AES-256-GCM encryption is, how it protects sensitive data, and why authenticated encryption is important for password managers."
+  >
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What Is AES-256-GCM Encryption?">
+  <meta
+    property="og:description"
+    content="Learn what AES-256-GCM encryption is, how it protects sensitive data, and why authenticated encryption matters."
+  >
+  <meta property="og:url" content="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+  <meta property="og:site_name" content="KeenPassword Vault">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="../index.html">
+        <img
+          src="../images/logo.png"
+          alt="KeenPassword Vault logo"
+          onerror="this.style.display='none'"
+        >
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
+
+      <nav>
+        <a href="../index.html#features">Features</a>
+        <a href="../index.html#screenshots">Screenshots</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./" aria-current="page">Blog</a>
+        <a href="../contact.html">Contact &amp; Support</a>
+        <a href="../privacy_policy.html">Privacy Policy</a>
+
+        <div class="language-selector">
+          <button
+            type="button"
+            class="language-button"
+            aria-expanded="false"
+          >
+            Language ▾
+          </button>
+
+          <div class="language-menu">
+            <a href="../index.html">English</a>
+            <a href="../de/">Deutsch</a>
+            <a href="../es/">Español</a>
+            <a href="../fr/">Français</a>
+            <a href="../it/">Italiano</a>
+            <a href="../nl/">Nederlands</a>
+            <a href="../pl/">Polski</a>
+            <a href="../pt-br/">Português (Brasil)</a>
+            <a href="../pt-pt/">Português (Portugal)</a>
+          </div>
+        </div>
+
+        <a
+          class="nav-store"
+          href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
+        >
+          Microsoft Store
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <article class="blog-article">
+
+      <header class="article-header">
+
+        <a class="back-to-blog" href="./">
+          ← Back to Blog
+        </a>
+
+        <p class="article-date">September 2026</p>
+
+        <h1>What Is AES-256-GCM Encryption?</h1>
+
+        <p class="article-intro">
+          Encryption is one of the most important technologies used to protect
+          sensitive information. Password managers rely on encryption to help
+          keep stored passwords and other private data protected. One encryption
+          method you may encounter is AES-256-GCM. But what does that actually
+          mean?
+        </p>
+
+      </header>
+
+
+      <div class="article-content">
+
+        <h2>What Is AES?</h2>
+
+        <p>
+          AES stands for <strong>Advanced Encryption Standard</strong>. It is a
+          widely used symmetric encryption algorithm designed to protect
+          information by transforming readable data into an encrypted form.
+        </p>
+
+        <p>
+          With symmetric encryption, the same underlying secret key is used
+          to encrypt and decrypt the data. Without the appropriate key, the
+          encrypted information should not be readable.
+        </p>
+
+        <p>
+          AES supports key sizes of 128, 192, and 256 bits. AES-256 refers to
+          the version that uses a 256-bit encryption key.
+        </p>
+
+
+        <h2>What Does the "256" Mean?</h2>
+
+        <p>
+          The "256" in AES-256 refers to the size of the encryption key:
+          <strong>256 bits</strong>.
+        </p>
+
+        <p>
+          A larger key provides a larger possible key space, making exhaustive
+          brute-force attempts against the encryption key computationally
+          impractical with currently known methods when the cryptographic
+          implementation and key management are handled properly.
+        </p>
+
+        <p>
+          The important point is that AES-256 is referring to the encryption
+          key size, not the size of the data being encrypted.
+        </p>
+
+
+        <h2>What Does GCM Mean?</h2>
+
+        <p>
+          GCM stands for <strong>Galois/Counter Mode</strong>. It is a mode of
+          operation that can be used with AES to provide authenticated
+          encryption.
+        </p>
+
+        <p>
+          This is important because encryption is not only about keeping data
+          secret. A system also needs a way to detect whether encrypted data
+          has been modified or corrupted.
+        </p>
+
+        <p>
+          AES-GCM provides both:
+        </p>
+
+        <ul>
+          <li><strong>Confidentiality</strong> — helps keep the encrypted data private.</li>
+          <li><strong>Integrity and authenticity</strong> — provides an authentication tag that can be checked to detect unauthorized changes to the encrypted data.</li>
+        </ul>
+
+
+        <h2>What Is an Authentication Tag?</h2>
+
+        <p>
+          AES-GCM produces an authentication tag along with the encrypted
+          data. This tag allows the application to verify that the encrypted
+          information has not been altered since it was created.
+        </p>
+
+        <p>
+          If the encrypted data or associated authenticated information is
+          modified, authentication can fail when the data is decrypted.
+          The application can then reject the data instead of treating
+          potentially modified information as valid.
+        </p>
+
+        <p>
+          This provides an important layer of protection for applications
+          that store sensitive information.
+        </p>
+
+
+        <h2>Why Is This Important for Password Managers?</h2>
+
+        <p>
+          Password managers store information that can be extremely sensitive,
+          including passwords, usernames, secure notes, and other private
+          information.
+        </p>
+
+        <p>
+          Simply storing that information in a file is not enough. If someone
+          gains access to the underlying storage, the stored information should
+          not be available in readable form.
+        </p>
+
+        <p>
+          Encryption allows a password manager to store the vault in an
+          encrypted format rather than as plain text.
+        </p>
+
+        <p>
+          Authenticated encryption also helps the application detect
+          unexpected modifications to the encrypted vault data.
+        </p>
+
+
+        <h2>Encryption Does Not Replace a Strong Master Password</h2>
+
+        <p>
+          Strong encryption is an important part of protecting a password
+          manager, but it does not eliminate the importance of protecting the
+          key used to access the encrypted data.
+        </p>
+
+        <p>
+          A strong, unique master password is therefore an important part of
+          an overall password manager security strategy.
+        </p>
+
+        <p>
+          Users should also protect their computers, keep their operating
+          system and security software up to date, and use sensible backup
+          practices.
+        </p>
+
+
+        <h2>AES-256-GCM and Local Encryption</h2>
+
+        <p>
+          Encryption can be used whether a password manager stores its vault
+          locally or uses cloud infrastructure. The important distinction is
+          where the encrypted data is stored and how keys are handled.
+        </p>
+
+        <p>
+          With a local password manager, the encrypted vault can remain on the
+          user's own computer rather than being uploaded to a remote service.
+          This can be useful for people who want their password vault to remain
+          entirely under their local control.
+        </p>
+
+
+        <h2>What AES-256-GCM Does Not Mean</h2>
+
+        <p>
+          AES-256-GCM is a cryptographic building block. Using it does not
+          automatically make an application secure.
+        </p>
+
+        <p>
+          The overall security of an application also depends on how encryption
+          keys are derived and protected, how encrypted data is handled, how
+          authentication is implemented, how backups are protected, and how
+          the rest of the application is designed.
+        </p>
+
+        <p>
+          In other words, the algorithm is only one part of the larger security
+          picture.
+        </p>
+
+
+        <h2>AES-256-GCM in KeenPassword Vault</h2>
+
+        <p>
+          KeenPassword Vault uses AES-256-GCM to encrypt the local vault on
+          the user's Windows computer. The vault is protected locally rather
+          than being uploaded to a cloud service.
+        </p>
+
+        <p>
+          KeenPassword Vault is designed as an offline password manager, so
+          your stored vault data remains on your computer. The application
+          does not require an online account, cloud synchronization, or a
+          subscription.
+        </p>
+
+        <p>
+          The encryption layer is part of a broader security design that
+          includes local storage, a master password, encrypted backups, and
+          features intended to help users protect their vault.
+        </p>
+
+
+        <h2>The Bottom Line</h2>
+
+        <p>
+          AES-256-GCM combines AES encryption with an authenticated encryption
+          mode. AES-256 provides a 256-bit encryption key, while GCM provides
+          authenticated encryption that can help detect unauthorized
+          modifications to encrypted data.
+        </p>
+
+        <p>
+          For a password manager, these capabilities are useful because the
+          application needs to protect sensitive information while also being
+          able to detect when encrypted data is no longer valid.
+        </p>
+
+        <p>
+          However, encryption is only one part of password manager security.
+          Strong passwords, secure key handling, protected backups, and good
+          application design all contribute to the overall security of a
+          password vault.
+        </p>
+
+      </div>
+
+
+      <footer class="article-footer">
+
+        <a class="back-to-blog" href="./">
+          ← Back to Blog
+        </a>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 KeenApps. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="../../script.js"></script>
+
+</body>
+</html>
