@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>O Que É a Criptografia AES-256-GCM? | KeenPassword Vault</title>
+
+  <meta
+    name="description"
+    content="Aprenda o que é a criptografia AES-256-GCM, como ela protege dados confidenciais e por que a criptografia autenticada é importante para gerenciadores de senhas."
+  >
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+
+  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="O Que É a Criptografia AES-256-GCM?">
+  <meta
+    property="og:description"
+    content="Aprenda o que é a criptografia AES-256-GCM, como ela protege dados confidenciais e por que a criptografia autenticada é importante."
+  >
+  <meta property="og:url" content="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+  <meta property="og:site_name" content="KeenPassword Vault">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="../index.html">
+        <img
+          src="../../images/logo.png"
+          alt="KeenPassword Vault logo"
+          onerror="this.style.display='none'"
+        >
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
+
+      <nav>
+        <a href="../index.html#features">Recursos</a>
+        <a href="../index.html#screenshots">Capturas de Tela</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./" aria-current="page">Blog</a>
+        <a href="../contact.html">Contato e Suporte</a>
+        <a href="../privacy_policy.html">Política de Privacidade</a>
+
+        <div class="language-selector">
+          <button
+            type="button"
+            class="language-button"
+            aria-expanded="false"
+          >
+            Idioma ▾
+          </button>
+
+          <div class="language-menu">
+            <a href="../../index.html">English</a>
+            <a href="../../de/">Deutsch</a>
+            <a href="../../es/">Español</a>
+            <a href="../../fr/">Français</a>
+            <a href="../../it/">Italiano</a>
+            <a href="../../nl/">Nederlands</a>
+            <a href="../../pl/">Polski</a>
+            <a href="../../pt-br/">Português (Brasil)</a>
+            <a href="../../pt-pt/">Português (Portugal)</a>
+          </div>
+        </div>
+
+        <a
+          class="nav-store"
+          href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
+        >
+          Microsoft Store
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <article class="blog-article">
+
+      <header class="article-header">
+
+        <a class="back-to-blog" href="./">
+          ← Voltar para o Blog
+        </a>
+
+        <p class="article-date">Setembro de 2026</p>
+
+        <h1>O Que É a Criptografia AES-256-GCM?</h1>
+
+        <p class="article-intro">
+          A criptografia é uma das tecnologias mais importantes usadas para proteger
+          informações confidenciais. Os gerenciadores de senhas contam com a criptografia para
+          ajudar a manter as senhas armazenadas e outros dados privados protegidos. Um método
+          de criptografia que você pode encontrar é o AES-256-GCM. Mas o que isso realmente
+          significa?
+        </p>
+
+      </header>
+
+
+      <div class="article-content">
+
+        <h2>O Que É AES?</h2>
+
+        <p>
+          AES significa <strong>Advanced Encryption Standard</strong> (Padrão de Criptografia Avançada). É um
+          algoritmo de criptografia simétrica amplamente utilizado, projetado para proteger
+          informações transformando dados legíveis em uma forma criptografada.
+        </p>
+
+        <p>
+          Na criptografia simétrica, a mesma chave secreta subjacente é usada
+          para criptografar e descriptografar os dados. Sem a chave apropriada, a
+          informação criptografada não deve ser legível.
+        </p>
+
+        <p>
+          O AES suporta tamanhos de chave de 128, 192 e 256 bits. AES-256 refere-se
+          à versão que utiliza uma chave de criptografia de 256 bits.
+        </p>
+
+
+        <h2>O Que Significa o "256"?</h2>
+
+        <p>
+          O "256" em AES-256 refere-se ao tamanho da chave de criptografia:
+          <strong>256 bits</strong>.
+        </p>
+
+        <p>
+          Uma chave maior oferece um espaço de chave possível maior, tornando tentativas
+          exaustivas de força bruta contra a chave de criptografia computacionalmente
+          impraticáveis com os métodos conhecidos atualmente, desde que a implementação
+          criptográfica e o gerenciamento de chaves sejam manipulados adequadamente.
+        </p>
+
+        <p>
+          O ponto importante é que o AES-256 refere-se ao tamanho da chave de criptografia,
+          e não ao tamanho dos dados que estão sendo criptografados.
+        </p>
+
+
+        <h2>O Que Significa GCM?</h2>
+
+        <p>
+          GCM significa <strong>Galois/Counter Mode</strong> (Modo Galois/Contador). É um modo de
+          operação que pode ser usado com o AES para fornecer criptografia
+          autenticada.
+        </p>
+
+        <p>
+          Isso é importante porque a criptografia não se resume apenas a manter os dados
+          em segredo. Um sistema também precisa de uma maneira de detectar se os dados criptografados
+          foram modificados ou corrompidos.
+        </p>
+
+        <p>
+          O AES-GCM oferece ambos:
+        </p>
+
+        <ul>
+          <li><strong>Confidencialidade</strong> — ajuda a manter os dados criptografados privados.</li>
+          <li><strong>Integridade e autenticidade</strong> — fornece uma tag de autenticação que pode ser verificada para detectar alterações não autorizadas nos dados criptografados.</li>
+        </ul>
+
+
+        <h2>O Que É uma Tag de Autenticação?</h2>
+
+        <p>
+          O AES-GCM produz uma tag de autenticação junto com os dados
+          criptografados. Essa tag permite que o aplicativo verifique se a informação
+          criptografada não foi alterada desde que foi criada.
+        </p>
+
+        <p>
+          Se os dados criptografados ou as informações autenticadas associadas forem
+          modificados, a autenticação falhará quando os dados forem descriptografados.
+          O aplicativo poderá então rejeitar os dados em vez de tratar
+          informações potencialmente modificadas como válidas.
+        </p>
+
+        <p>
+          Isso fornece uma camada importante de proteção para aplicativos
+          que armazenam informações confidenciais.
+        </p>
+
+
+        <h2>Por Que Isso É Importante para Gerenciadores de Senhas?</h2>
+
+        <p>
+          Os gerenciadores de senhas armazenam informações que podem ser extremamente confidenciais,
+          incluindo senhas, nomes de usuário, notas seguras e outras informações
+          privadas.
+        </p>
+
+        <p>
+          Apenas armazenar essas informações em um arquivo não é suficiente. Se alguém
+          obtiver acesso ao armazenamento subjacente, as informações armazenadas não
+          devem estar disponíveis de forma legível.
+        </p>
+
+        <p>
+          A criptografia permite que um gerenciador de senhas armazene o cofre em um
+          formato criptografado em vez de texto puro.
+        </p>
+
+        <p>
+          A criptografia autenticada também ajuda o aplicativo a detectar
+          modificações inesperadas nos dados do cofre criptografado.
+        </p>
+
+
+        <h2>A Criptografia Não Substitui uma Senha Principal Forte</h2>
+
+        <p>
+          Uma criptografia forte é uma parte importante da proteção de um gerenciador de
+          senhas, mas não elimina a importância de proteger a
+          chave usada para acessar os dados criptografados.
+        </p>
+
+        <p>
+          Portanto, uma senha principal forte e única é uma parte essencial de
+          uma estratégia global de segurança para gerenciadores de senhas.
+        </p>
+
+        <p>
+          Os usuários também devem proteger seus computadores, manter o sistema
+          operacional e o software de segurança atualizados e adotar boas
+          práticas de backup.
+        </p>
+
+
+        <h2>AES-256-GCM e Criptografia Local</h2>
+
+        <p>
+          A criptografia pode ser usada quer o gerenciador de senhas armazene seu cofre
+          localmente ou utilize uma infraestrutura em nuvem. A distinção importante é
+          onde os dados criptografados são armazenados e como as chaves são gerenciadas.
+        </p>
+
+        <p>
+          Com um gerenciador de senhas local, o cofre criptografado pode permanecer no
+          próprio computador do usuário em vez de ser enviado para um serviço remoto.
+          Isso pode ser útil para pessoas que preferem que seu cofre de senhas permaneça
+          totalmente sob seu controle local.
+        </p>
+
+
+        <h2>O Que o AES-256-GCM Não Significa</h2>
+
+        <p>
+          O AES-256-GCM é um bloco de construção criptográfico. Usá-lo não
+          torna um aplicativo automaticamente seguro.
+        </p>
+
+        <p>
+          A segurança geral de um aplicativo também depende de como as chaves de criptografia
+          são derivadas e protegidas, como os dados criptografados são manipulados, como
+          a autenticação é implementada, como os backups são protegidos e como
+          o restante do aplicativo é projetado.
+        </p>
+
+        <p>
+          Em outras palavras, o algoritmo é apenas uma parte do cenário geral
+          de segurança.
+        </p>
+
+
+        <h2>AES-256-GCM no KeenPassword Vault</h2>
+
+        <p>
+          O KeenPassword Vault usa o AES-256-GCM para criptografar o cofre local no
+          computador Windows do usuário. O cofre é protegido localmente em vez
+          de ser enviado para um serviço em nuvem.
+        </p>
+
+        <p>
+          O KeenPassword Vault foi projetado como um gerenciador de senhas offline, portanto,
+          os dados do seu cofre armazenado permanecem no seu computador. O aplicativo
+          não exige uma conta online, sincronização em nuvem ou uma
+          assinatura.
+        </p>
+
+        <p>
+          A camada de criptografia faz parte de um projeto de segurança mais amplo que
+          inclui armazenamento local, senha principal, backups criptografados e
+          recursos destinados a ajudar os usuários a proteger seu cofre.
+        </p>
+
+
+        <h2>Resumo</h2>
+
+        <p>
+          O AES-256-GCM combina a criptografia AES com um modo de criptografia
+          autenticada. O AES-256 fornece uma chave de criptografia de 256 bits, enquanto o GCM
+          oferece criptografia autenticada que pode ajudar a detectar modificações
+          não autorizadas nos dados criptografados.
+        </p>
+
+        <p>
+          Para um gerenciador de senhas, esses recursos são úteis porque o
+          aplicativo precisa proteger informações confidenciais ao mesmo tempo que deve
+          ser capaz de detectar quando os dados criptografados não são mais válidos.
+        </p>
+
+        <p>
+          No entanto, a criptografia é apenas uma parte da segurança do gerenciador de senhas.
+          Senhas fortes, gerenciamento seguro de chaves, backups protegidos e um bom
+          design de aplicativo contribuem para a segurança geral de um
+          cofre de senhas.
+        </p>
+
+      </div>
+
+
+      <footer class="article-footer">
+
+        <a class="back-to-blog" href="./">
+          ← Voltar para o Blog
+        </a>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 KeenApps. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+
+  <script src="../../script.js"></script>
+
+</body>
+</html>
