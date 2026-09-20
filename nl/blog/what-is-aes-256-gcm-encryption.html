@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wat is AES-256-GCM-versleuteling? | KeenPassword Vault</title>
+
+  <meta
+    name="description"
+    content="Leer wat AES-256-GCM-versleuteling is, hoe het gevoelige gegevens beschermt en waarom geauthenticeerde versleuteling belangrijk is voor wachtwoordmanagers."
+  >
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+
+  <link rel="icon" type="image/png" href="../../images/favicon.png">
+  <link rel="stylesheet" href="../../style.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Wat is AES-256-GCM-versleuteling?">
+  <meta
+    property="og:description"
+    content="Leer wat AES-256-GCM-versleuteling is, hoe het gevoelige gegevens beschermt en waarom geauthenticeerde versleuteling van belang is."
+  >
+  <meta property="og:url" content="https://keenpasswordvault.com/blog/what-is-aes-256-gcm-encryption.html">
+  <meta property="og:site_name" content="KeenPassword Vault">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="../index.html">
+        <img
+          src="../../images/logo.png"
+          alt="KeenPassword Vault logo"
+          onerror="this.style.display='none'"
+        >
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
+
+      <nav>
+        <a href="../index.html#features">Functies</a>
+        <a href="../index.html#screenshots">Schermafbeeldingen</a>
+        <a href="../index.html#faq">FAQ</a>
+        <a href="./" aria-current="page">Blog</a>
+        <a href="../contact.html">Contact &amp; Ondersteuning</a>
+        <a href="../privacy_policy.html">Privacybeleid</a>
+
+        <div class="language-selector">
+          <button
+            type="button"
+            class="language-button"
+            aria-expanded="false"
+          >
+            Taal ▾
+          </button>
+
+          <div class="language-menu">
+            <a href="../../index.html">English</a>
+            <a href="../../de/">Deutsch</a>
+            <a href="../../es/">Español</a>
+            <a href="../../fr/">Français</a>
+            <a href="../../it/">Italiano</a>
+            <a href="../../nl/">Nederlands</a>
+            <a href="../../pl/">Polski</a>
+            <a href="../../pt-br/">Português (Brasil)</a>
+            <a href="../../pt-pt/">Português (Portugal)</a>
+          </div>
+        </div>
+
+        <a
+          class="nav-store"
+          href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
+        >
+          Microsoft Store
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="container">
+
+    <article class="blog-article">
+
+      <header class="article-header">
+
+        <a class="back-to-blog" href="./">
+          ← Terug naar Blog
+        </a>
+
+        <p class="article-date">September 2026</p>
+
+        <h1>Wat is AES-256-GCM-versleuteling?</h1>
+
+        <p class="article-intro">
+          Versleuteling is een van de belangrijkste technologieën die worden gebruikt om
+          gevoelige informatie te beschermen. Wachtwoordmanagers vertrouwen op versleuteling om
+          opgeslagen wachtwoorden en andere privégegevens beschermd te houden. Een versleutelingsmethode
+          die je tegen kunt komen is AES-256-GCM. Maar wat betekent dat eigenlijk?
+        </p>
+
+      </header>
+
+
+      <div class="article-content">
+
+        <h2>Wat is AES?</h2>
+
+        <p>
+          AES staat voor <strong>Advanced Encryption Standard</strong>. Het is een
+          veelgebruikt symmetrisch versleutelingsalgoritme dat is ontworpen om
+          informatie te beschermen door leesbare gegevens om te zetten in een versleutelde vorm.
+        </p>
+
+        <p>
+          Bij symmetrische versleuteling wordt dezelfde onderliggende geheime sleutel gebruikt
+          om de gegevens te versleutelen én te ontsleutelen. Zonder de juiste sleutel
+          zou de versleutelde informatie niet leesbaar mogen zijn.
+        </p>
+
+        <p>
+          AES ondersteunt sleutelgrootten van 128, 192 en 256 bits. AES-256 verwijst naar
+          de versie die een 256-bits versleutelingssleutel gebruikt.
+        </p>
+
+
+        <h2>Wat betekent de "256"?</h2>
+
+        <p>
+          De "256" in AES-256 verwijst naar de grootte van de versleutelingssleutel:
+          <strong>256 bits</strong>.
+        </p>
+
+        <p>
+          Een grotere sleutel zorgt voor een grotere mogelijke sleutelruimte, waardoor uitputtende
+          brute-force-pogingen tegen de versleutelingssleutel met de huidige bekende methoden
+          computationeel onhaalbaar worden wanneer de cryptografische implementatie en het
+          sleutelbeheer correct worden uitgevoerd.
+        </p>
+
+        <p>
+          Het belangrijke punt is dat AES-256 verwijst naar de grootte van de versleutelingssleutel,
+          niet naar de grootte van de gegevens die worden versleuteld.
+        </p>
+
+
+        <h2>Wat betekent GCM?</h2>
+
+        <p>
+          GCM staat voor <strong>Galois/Counter Mode</strong>. Het is een werkingsmodus die
+          met AES kan worden gebruikt om geauthenticeerde versleuteling te bieden.
+        </p>
+
+        <p>
+          Dit is belangrijk omdat versleuteling niet alleen gaat over het geheim houden van gegevens.
+          Een systeem heeft ook een manier nodig om te detecteren of versleutelde gegevens zijn
+          gewijzigd of beschadigd.
+        </p>
+
+        <p>
+          AES-GCM biedt beide:
+        </p>
+
+        <ul>
+          <li><strong>Vertrouwelijkheid</strong> — helpt de versleutelde gegevens privé te houden.</li>
+          <li><strong>Integriteit en authenticiteit</strong> — biedt een authenticatietag die kan worden gecontroleerd om ongeoorloofde wijzigingen in de versleutelde gegevens te detecteren.</li>
+        </ul>
+
+
+        <h2>Wat is een authenticatietag?</h2>
+
+        <p>
+          AES-GCM genereert een authenticatietag samen met de versleutelde gegevens.
+          Met deze tag kan de toepassing verifiëren dat de versleutelde informatie niet
+          is gewijzigd sinds deze is aangemaakt.
+        </p>
+
+        <p>
+          Als de versleutelde gegevens of bijbehorende geauthenticeerde informatie worden
+          gewijzigd, kan de authenticatie mislukken wanneer de gegevens worden ontsleuteld.
+          De toepassing kan de gegevens dan weigeren in plaats van potentieel gewijzigde
+          informatie als geldig te behandelen.
+        </p>
+
+        <p>
+          Dit biedt een belangrijke beschermingslaag voor toepassingen die gevoelige
+          informatie opslaan.
+        </p>
+
+
+        <h2>Waarom is dit belangrijk voor wachtwoordmanagers?</h2>
+
+        <p>
+          Wachtwoordmanagers slaan informatie op die uitermate gevoelig kan zijn,
+          waaronder wachtwoorden, gebruikersnamen, veilige notities en andere
+          privégegevens.
+        </p>
+
+        <p>
+          Het simpelweg opslaan van die informatie in een bestand is niet voldoende. Als iemand
+          toegang krijgt tot de onderliggende opslag, mag de opgeslagen informatie niet in
+          leesbare vorm beschikbaar zijn.
+        </p>
+
+        <p>
+          Versleuteling stelt een wachtwoordmanager in staat de kluis in een versleuteld formaat
+          op te slaan in plaats van als platte tekst.
+        </p>
+
+        <p>
+          Geauthenticeerde versleuteling helpt de toepassing ook bij het detecteren van
+          onverwachte wijzigingen in de versleutelde kluisgegevens.
+        </p>
+
+
+        <h2>Versleuteling vervangt geen sterk hoofdwachtwoord</h2>
+
+        <p>
+          Sterke versleuteling is een belangrijk onderdeel van het beschermen van een
+          wachtwoordmanager, maar het neemt het belang van het beschermen van de sleutel die
+          wordt gebruikt om toegang te krijgen tot de versleutelde gegevens niet weg.
+        </p>
+
+        <p>
+          Een sterk, uniek hoofdwachtwoord is daarom een belangrijk onderdeel van een
+          totale beveiligingsstrategie voor een wachtwoordmanager.
+        </p>
+
+        <p>
+          Gebruikers moeten ook hun computers beschermen, hun besturingssysteem en
+          beveiligingssoftware up-to-date houden en verstandige back-uppraktijken hanteren.
+        </p>
+
+
+        <h2>AES-256-GCM en lokale versleuteling</h2>
+
+        <p>
+          Versleuteling kan worden gebruikt ongeacht of een wachtwoordmanager zijn kluis lokaal
+          opslaat of gebruikmaakt van een cloudinfrastructuur. Het belangrijke verschil is
+          waar de versleutelde gegevens worden opgeslagen en hoe er met sleutels wordt omgegaan.
+        </p>
+
+        <p>
+          Bij een lokale wachtwoordmanager kan de versleutelde kluis op de eigen computer van
+          de gebruiker blijven staan in plaats van te worden geüpload naar een externe dienst.
+          Dit kan handig zijn voor mensen die willen dat hun wachtwoordkluis volledig onder hun
+          lokale controle blijft.
+        </p>
+
+
+        <h2>Wat AES-256-GCM niet betekent</h2>
+
+        <p>
+          AES-256-GCM is een cryptografische bouwsteen. Het gebruik ervan maakt een toepassing
+          niet automatisch veilig.
+        </p>
+
+        <p>
+          De algehele beveiliging van een toepassing hangt ook af van hoe versleutelingssleutels
+          worden afgeleid en beschermd, hoe met versleutelde gegevens wordt omgegaan, hoe
+          authenticatie is geïmplementeerd, hoe back-ups worden beschermd en hoe de rest van
+          de toepassing is ontworpen.
+        </p>
+
+        <p>
+          Met andere woorden: het algoritme is slechts één onderdeel van het grotere
+          beveiligingsplaatje.
+        </p>
+
+
+        <h2>AES-256-GCM in KeenPassword Vault</h2>
+
+        <p>
+          KeenPassword Vault gebruikt AES-256-GCM om de lokale kluis op de Windows-computer
+          van de gebruiker te versleutelen. De kluis wordt lokaal beschermd in plaats van
+          te worden geüpload naar een clouddienst.
+        </p>
+
+        <p>
+          KeenPassword Vault is ontworpen als een offline wachtwoordmanager, dus je opgeslagen
+          kluisgegevens blijven op je computer staan. De toepassing vereist geen online account,
+          cloudsynchronisatie of abonnement.
+        </p>
+
+        <p>
+          De versleutelingslaag maakt deel uit van een breder beveiligingsontwerp met onder
+          meer lokale opslag, een hoofdwachtwoord, versleutelde back-ups en functies die zijn
+          bedoeld om gebruikers te helpen hun kluis te beschermen.
+        </p>
+
+
+        <h2>Tot slot</h2>
+
+        <p>
+          AES-256-GCM combineert AES-versleuteling met een geauthenticeerde versleutelingsmodus.
+          AES-256 biedt een 256-bits versleutelingssleutel, terwijl GCM geauthenticeerde
+          versleuteling biedt die kan helpen bij het detecteren van ongeoorloofde wijzigingen
+          in versleutelde gegevens.
+        </p>
+
+        <p>
+          Voor een wachtwoordmanager zijn deze mogelijkheden nuttig omdat de toepassing
+          gevoelige informatie moet beschermen en tegelijkertijd moet kunnen detecteren
+          wanneer versleutelde gegevens niet langer geldig zijn.
+        </p>
+
+        <p>
+          Versleuteling is echter slechts één onderdeel van de beveiliging van een wachtwoordmanager.
+          Sterke wachtwoorden, veilige sleutelverwerking, beschermde back-ups en een goed
+          toepassingsontwerp dragen allemaal bij aan de algehele beveiliging van een wachtwoordkluis.
+        </p>
+
+      </div>
+
+
+      <footer class="article-footer">
+
+        <a class="back-to-blog" href="./">
+          ← Terug naar Blog
+        </a>
+
+      </footer>
+
+    </article>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 KeenApps. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+
+  <script src="../../script.js"></script>
+
+</body>
+</html>
