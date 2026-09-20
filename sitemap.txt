@@ -1,0 +1,228 @@
+Folder PATH listing
+Volume serial number is E049-3B07
+C:.
+|   CNAME
+|   contact-thank-you.html
+|   contact.html
+|   index.html
+|   privacy_policy.html
+|   README.txt
+|   robots.txt
+|   script.js
+|   sitemap.txt
+|   sitemap.xml
+|   style.css
+|   
++---blog
+|       how-to-create-a-strong-master-password.html
+|       index.html
+|       what-is-a-password-breach.html
+|       what-is-a-password-manager.html
+|       what-is-aes-256-gcm-encryption.html
+|       why-offline-password-managers-matter.html
+|       why-you-should-never-reuse-passwords.html
+|       
++---de
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---es
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---fr
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---images
+|   |   favicon.png
+|   |   logo.png
+|   |   main_screenshot.png
+|   |   PUT_IMAGES_HERE.txt
+|   |   screenshot-1.png
+|   |   screenshot-2.png
+|   |   screenshot-3.png
+|   |   screenshot-4.png
+|   |   screenshot-5.png
+|   |   screenshot-6.png
+|   |   
+|   +---de
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---es
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---fr
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---it
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---nl
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---pl
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   +---pt-br
+|   |       main_screenshot.png
+|   |       screenshot-1.png
+|   |       screenshot-2.png
+|   |       screenshot-3.png
+|   |       screenshot-4.png
+|   |       screenshot-5.png
+|   |       screenshot-6.png
+|   |       
+|   \---pt-pt
+|           main_screenshot.png
+|           screenshot-1.png
+|           screenshot-2.png
+|           screenshot-3.png
+|           screenshot-4.png
+|           screenshot-5.png
+|           screenshot-6.png
+|           
++---it
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---nl
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---pl
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
++---pt-br
+|   |   contact-thank-you.html
+|   |   contact.html
+|   |   index.html
+|   |   privacy_policy.html
+|   |   
+|   \---blog
+|           how-to-create-a-strong-master-password.html
+|           index.html
+|           what-is-a-password-breach.html
+|           what-is-a-password-manager.html
+|           what-is-aes-256-gcm-encryption.html
+|           why-offline-password-managers-matter.html
+|           why-you-should-never-reuse-passwords.html
+|           
+\---pt-pt
+    |   contact-thank-you.html
+    |   contact.html
+    |   index.html
+    |   privacy_policy.html
+    |   
+    \---blog
+            how-to-create-a-strong-master-password.html
+            index.html
+            what-is-a-password-breach.html
+            what-is-a-password-manager.html
+            what-is-aes-256-gcm-encryption.html
+            why-offline-password-managers-matter.html
+            why-you-should-never-reuse-passwords.html
+            
