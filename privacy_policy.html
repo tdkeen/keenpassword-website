@@ -234,55 +234,7 @@
   </footer>
 
 
-  <!-- LANGUAGE DETECTION -->
-
-  <script>
-    const languagePaths = {
-      de: "./de/",
-      es: "./es/",
-      fr: "./fr/",
-      it: "./it/",
-      nl: "./nl/",
-      pl: "./pl/",
-      "pt-BR": "./pt-br/",
-      "pt-PT": "./pt-pt/"
-    };
-
-    const browserLanguages = navigator.languages || [navigator.language];
-
-    let detectedLanguage = null;
-
-    for (const language of browserLanguages) {
-      const normalizedLanguage = language.toLowerCase();
-
-      /* Handle Portuguese variants separately */
-
-      if (normalizedLanguage.startsWith("pt-br")) {
-        detectedLanguage = "pt-BR";
-        break;
-      }
-
-      if (normalizedLanguage.startsWith("pt-pt")) {
-        detectedLanguage = "pt-PT";
-        break;
-      }
-
-      /* Handle other supported languages */
-
-      const languageCode = normalizedLanguage.split("-")[0];
-
-      if (languagePaths[languageCode]) {
-        detectedLanguage = languageCode;
-        break;
-      }
-    }
-
-    /* Redirect only for supported non-English languages */
-
-    if (detectedLanguage) {
-      window.location.href = languagePaths[detectedLanguage];
-    }
-  </script>
+  <script src="script.js"></script>
 
 
 

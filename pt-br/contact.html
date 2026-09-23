@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta
-name="description"
-content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunta, relate um problema ou envie uma sugestão de recurso."
-
->
+  <meta name="description"
+    content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunta, relate um problema ou envie uma sugestão de recurso.">
 
   <title>Contato e suporte — KeenPassword Vault</title>
 
@@ -56,30 +54,23 @@ content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunt
     <div class="container nav-wrap">
 
 
-  <a class="brand" href="index.html">
-    <img
-      src="../images/logo.png"
-      alt="Logotipo do KeenPassword Vault"
-      onerror="this.style.display='none'"
-    >
-    <span>KeenPassword <strong>Vault</strong></span>
-  </a>
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Logotipo do KeenPassword Vault" onerror="this.style.display='none'">
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
 
-  <nav>
-    <a href="privacy_policy.html">Política de privacidade</a>
-    <a href="index.html#features">Recursos</a>
-    <a href="index.html#screenshots">Capturas de tela</a>
-    <a href="index.html#faq">Perguntas frequentes</a>
-    <a href="contact.html">Contato e suporte</a>
-    <a
-      class="nav-store"
-      href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
-    >
-      Microsoft Store
-    </a>
-  </nav>
+      <nav>
+        <a href="privacy_policy.html">Política de privacidade</a>
+        <a href="index.html#features">Recursos</a>
+        <a href="index.html#screenshots">Capturas de tela</a>
+        <a href="index.html#faq">Perguntas frequentes</a>
+        <a href="contact.html">Contato e suporte</a>
+        <a class="nav-store" href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
+          Microsoft Store
+        </a>
+      </nav>
 
-</div>
+    </div>
 
 
   </header>
@@ -89,168 +80,130 @@ content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunt
   <main>
 
 
-<section class="contact-hero">
+    <section class="contact-hero">
 
-  <div class="container narrow">
+      <div class="container narrow">
 
-    <div class="section-heading center">
+        <div class="section-heading center">
 
-      <div class="section-kicker">
-        CONTATO E SUPORTE
+          <div class="section-kicker">
+            CONTATO E SUPORTE
+          </div>
+
+          <h1>Como podemos ajudar?</h1>
+
+          <p>
+            Tem alguma dúvida, encontrou um problema ou tem uma sugestão?
+            Envie uma mensagem e responderemos a você.
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Web3Forms access key -->
+
+            <input type="hidden" name="access_key" value="3a283bb4-90e3-4b42-b1f1-42230d8933d0">
+
+
+            <!-- Form subject -->
+
+            <input type="hidden" name="subject" value="Formulário de contato do KeenPassword Vault">
+
+
+            <div class="form-group">
+
+              <label for="name">
+                Nome
+                <span class="optional">(opcional)</span>
+              </label>
+
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Seu nome">
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                E-mail
+              </label>
+
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="topic">
+                Assunto
+              </label>
+
+              <select id="topic" name="topic" required>
+
+                <option value="" disabled selected>
+                  Selecione um assunto
+                </option>
+
+                <option value="General Question">
+                  Dúvida geral
+                </option>
+
+                <option value="Bug Report">
+                  Relatar um problema
+                </option>
+
+                <option value="Feature Suggestion">
+                  Sugestão de recurso
+                </option>
+
+                <option value="Other">
+                  Outro
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Mensagem
+              </label>
+
+              <textarea id="message" name="message" rows="8" placeholder="Como podemos ajudar?" required></textarea>
+
+            </div>
+
+
+            <div class="form-warning">
+              <strong>Lembrete de privacidade:</strong>
+              não inclua senhas, senhas mestras,
+              chaves de recuperação ou outras informações confidenciais em sua mensagem.
+            </div>
+
+
+            <button type="submit" class="button primary contact-submit">
+              Enviar mensagem
+            </button>
+
+
+            <p class="form-note">
+              Seu endereço de e-mail é usado para que possamos responder à sua mensagem.
+            </p>
+
+          </form>
+
+        </div>
+
       </div>
 
-      <h1>Como podemos ajudar?</h1>
-
-      <p>
-        Tem alguma dúvida, encontrou um problema ou tem uma sugestão?
-        Envie uma mensagem e responderemos a você.
-      </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-      <form
-        id="contact-form"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-
-        <!-- Web3Forms access key -->
-
-        <input
-          type="hidden"
-          name="access_key"
-          value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
-        >
-
-
-        <!-- Form subject -->
-
-        <input
-          type="hidden"
-          name="subject"
-          value="Formulário de contato do KeenPassword Vault"
-        >
-
-
-        <div class="form-group">
-
-          <label for="name">
-            Nome
-            <span class="optional">(opcional)</span>
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="name"
-            placeholder="Seu nome"
-          >
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="email">
-            E-mail
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            placeholder="voce@exemplo.com"
-            required
-          >
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="topic">
-            Assunto
-          </label>
-
-          <select
-            id="topic"
-            name="topic"
-            required
-          >
-
-            <option value="" disabled selected>
-              Selecione um assunto
-            </option>
-
-            <option value="General Question">
-              Dúvida geral
-            </option>
-
-            <option value="Bug Report">
-              Relatar um problema
-            </option>
-
-            <option value="Feature Suggestion">
-              Sugestão de recurso
-            </option>
-
-            <option value="Other">
-              Outro
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="message">
-            Mensagem
-          </label>
-
-          <textarea
-            id="message"
-            name="message"
-            rows="8"
-            placeholder="Como podemos ajudar?"
-            required
-          ></textarea>
-
-        </div>
-
-
-        <div class="form-warning">
-          <strong>Lembrete de privacidade:</strong>
-          não inclua senhas, senhas mestras,
-          chaves de recuperação ou outras informações confidenciais em sua mensagem.
-        </div>
-
-
-        <button
-          type="submit"
-          class="button primary contact-submit"
-        >
-          Enviar mensagem
-        </button>
-
-
-        <p class="form-note">
-          Seu endereço de e-mail é usado para que possamos responder à sua mensagem.
-        </p>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
   </main>
@@ -260,31 +213,33 @@ content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunt
   <footer>
 
 
-<div class="container footer-wrap">
+    <div class="container footer-wrap">
 
-  <div>
-    <strong>KeenPassword Vault</strong><br>
-    <span>Gerenciamento de senhas com foco em privacidade para Windows.</span>
-  </div>
+      <div>
+        <strong>KeenPassword Vault</strong><br>
+        <span>Gerenciamento de senhas com foco em privacidade para Windows.</span>
+      </div>
 
-  <div class="footer-links">
-    <a href="privacy_policy.html">Política de privacidade</a>
-    <a href="index.html#features">Recursos</a>
-    <a href="index.html#faq">Perguntas frequentes</a>
-    <a href="contact.html">Contato e suporte</a>
-    <a href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
-      Microsoft Store
-    </a>
-  </div>
+      <div class="footer-links">
+        <a href="privacy_policy.html">Política de privacidade</a>
+        <a href="index.html#features">Recursos</a>
+        <a href="index.html#faq">Perguntas frequentes</a>
+        <a href="contact.html">Contato e suporte</a>
+        <a href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
+          Microsoft Store
+        </a>
+      </div>
 
-  <div>
-    © 2026 KeenApps. Todos os direitos reservados.
-  </div>
+      <div>
+        © 2026 KeenApps. Todos os direitos reservados.
+      </div>
 
-</div>
+    </div>
 
 
   </footer>
+
+  <script src="../script.js"></script>
 
   <script>
     const contactForm = document.getElementById("contact-form");
@@ -348,4 +303,5 @@ content="Entre em contato com o suporte do KeenPassword Vault. Faça uma pergunt
   </script>
 
 </body>
+
 </html>

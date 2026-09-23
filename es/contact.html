@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta
-name="description"
-content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una pregunta, informa de un error o envía una sugerencia de función."
-
->
+  <meta name="description"
+    content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una pregunta, informa de un error o envía una sugerencia de función.">
 
   <title>Contacto y soporte — KeenPassword Vault</title>
 
@@ -18,7 +16,7 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
 
 
 
-    <link rel="canonical" href="https://keenpasswordvault.com/es/contact.html">
+  <link rel="canonical" href="https://keenpasswordvault.com/es/contact.html">
 
   <link rel="alternate" hreflang="en" href="https://keenpasswordvault.com/contact.html">
   <link rel="alternate" hreflang="de" href="https://keenpasswordvault.com/de/contact.html">
@@ -41,7 +39,7 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
 
 
 
-  
+
   <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -53,30 +51,23 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
     <div class="container nav-wrap">
 
 
-  <a class="brand" href="index.html">
-    <img
-      src="../images/logo.png"
-      alt="Logotipo de KeenPassword Vault"
-      onerror="this.style.display='none'"
-    >
-    <span>KeenPassword <strong>Vault</strong></span>
-  </a>
+      <a class="brand" href="index.html">
+        <img src="../images/logo.png" alt="Logotipo de KeenPassword Vault" onerror="this.style.display='none'">
+        <span>KeenPassword <strong>Vault</strong></span>
+      </a>
 
-  <nav>
-    <a href="privacy_policy.html">Política de privacidad</a>
-    <a href="index.html#features">Funciones</a>
-    <a href="index.html#screenshots">Capturas de pantalla</a>
-    <a href="index.html#faq">Preguntas frecuentes</a>
-    <a href="contact.html">Contacto y soporte</a>
-    <a
-      class="nav-store"
-      href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4"
-    >
-      Microsoft Store
-    </a>
-  </nav>
+      <nav>
+        <a href="privacy_policy.html">Política de privacidad</a>
+        <a href="index.html#features">Funciones</a>
+        <a href="index.html#screenshots">Capturas de pantalla</a>
+        <a href="index.html#faq">Preguntas frecuentes</a>
+        <a href="contact.html">Contacto y soporte</a>
+        <a class="nav-store" href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
+          Microsoft Store
+        </a>
+      </nav>
 
-</div>
+    </div>
 
 
   </header>
@@ -86,168 +77,130 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
   <main>
 
 
-<section class="contact-hero">
+    <section class="contact-hero">
 
-  <div class="container narrow">
+      <div class="container narrow">
 
-    <div class="section-heading center">
+        <div class="section-heading center">
 
-      <div class="section-kicker">
-        CONTACTO Y SOPORTE
+          <div class="section-kicker">
+            CONTACTO Y SOPORTE
+          </div>
+
+          <h1>¿Cómo podemos ayudarte?</h1>
+
+          <p>
+            ¿Tienes una pregunta, has encontrado un error o tienes una sugerencia?
+            Envíanos un mensaje y te responderemos.
+          </p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <!-- Web3Forms access key -->
+
+            <input type="hidden" name="access_key" value="3a283bb4-90e3-4b42-b1f1-42230d8933d0">
+
+
+            <!-- Form subject -->
+
+            <input type="hidden" name="subject" value="Formulario de contacto de KeenPassword Vault">
+
+
+            <div class="form-group">
+
+              <label for="name">
+                Nombre
+                <span class="optional">(opcional)</span>
+              </label>
+
+              <input type="text" id="name" name="name" autocomplete="name" placeholder="Tu nombre">
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                Correo electrónico
+              </label>
+
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="tu@ejemplo.com" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="topic">
+                Tema
+              </label>
+
+              <select id="topic" name="topic" required>
+
+                <option value="" disabled selected>
+                  Selecciona un tema
+                </option>
+
+                <option value="Pregunta general">
+                  Pregunta general
+                </option>
+
+                <option value="Informe de error">
+                  Informe de error
+                </option>
+
+                <option value="Sugerencia de función">
+                  Sugerencia de función
+                </option>
+
+                <option value="Otro">
+                  Otro
+                </option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                Mensaje
+              </label>
+
+              <textarea id="message" name="message" rows="8" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+
+            </div>
+
+
+            <div class="form-warning">
+              <strong>Recordatorio de privacidad:</strong>
+              No incluyas contraseñas, contraseñas maestras,
+              claves de recuperación ni otra información confidencial en tu mensaje.
+            </div>
+
+
+            <button type="submit" class="button primary contact-submit">
+              Enviar mensaje
+            </button>
+
+
+            <p class="form-note">
+              Tu dirección de correo electrónico se utiliza para que podamos responder a tu mensaje.
+            </p>
+
+          </form>
+
+        </div>
+
       </div>
 
-      <h1>¿Cómo podemos ayudarte?</h1>
-
-      <p>
-        ¿Tienes una pregunta, has encontrado un error o tienes una sugerencia?
-        Envíanos un mensaje y te responderemos.
-      </p>
-
-    </div>
-
-
-    <div class="contact-card">
-
-      <form
-        id="contact-form"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-
-        <!-- Web3Forms access key -->
-
-        <input
-          type="hidden"
-          name="access_key"
-          value="3a283bb4-90e3-4b42-b1f1-42230d8933d0"
-        >
-
-
-        <!-- Form subject -->
-
-        <input
-          type="hidden"
-          name="subject"
-          value="Formulario de contacto de KeenPassword Vault"
-        >
-
-
-        <div class="form-group">
-
-          <label for="name">
-            Nombre
-            <span class="optional">(opcional)</span>
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            autocomplete="name"
-            placeholder="Tu nombre"
-          >
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="email">
-            Correo electrónico
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            autocomplete="email"
-            placeholder="tu@ejemplo.com"
-            required
-          >
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="topic">
-            Tema
-          </label>
-
-          <select
-            id="topic"
-            name="topic"
-            required
-          >
-
-            <option value="" disabled selected>
-              Selecciona un tema
-            </option>
-
-            <option value="Pregunta general">
-              Pregunta general
-            </option>
-
-            <option value="Informe de error">
-              Informe de error
-            </option>
-
-            <option value="Sugerencia de función">
-              Sugerencia de función
-            </option>
-
-            <option value="Otro">
-              Otro
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="message">
-            Mensaje
-          </label>
-
-          <textarea
-            id="message"
-            name="message"
-            rows="8"
-            placeholder="¿Cómo podemos ayudarte?"
-            required
-          ></textarea>
-
-        </div>
-
-
-        <div class="form-warning">
-          <strong>Recordatorio de privacidad:</strong>
-          No incluyas contraseñas, contraseñas maestras,
-          claves de recuperación ni otra información confidencial en tu mensaje.
-        </div>
-
-
-        <button
-          type="submit"
-          class="button primary contact-submit"
-        >
-          Enviar mensaje
-        </button>
-
-
-        <p class="form-note">
-          Tu dirección de correo electrónico se utiliza para que podamos responder a tu mensaje.
-        </p>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
   </main>
@@ -257,31 +210,34 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
   <footer>
 
 
-<div class="container footer-wrap">
+    <div class="container footer-wrap">
 
-  <div>
-    <strong>KeenPassword Vault</strong><br>
-    <span>Gestión de contraseñas centrada en la privacidad para Windows.</span>
-  </div>
+      <div>
+        <strong>KeenPassword Vault</strong><br>
+        <span>Gestión de contraseñas centrada en la privacidad para Windows.</span>
+      </div>
 
-  <div class="footer-links">
-    <a href="privacy_policy.html">Política de privacidad</a>
-    <a href="index.html#features">Funciones</a>
-    <a href="index.html#faq">Preguntas frecuentes</a>
-    <a href="contact.html">Contacto y soporte</a>
-    <a href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
-      Microsoft Store
-    </a>
-  </div>
+      <div class="footer-links">
+        <a href="privacy_policy.html">Política de privacidad</a>
+        <a href="index.html#features">Funciones</a>
+        <a href="index.html#faq">Preguntas frecuentes</a>
+        <a href="contact.html">Contacto y soporte</a>
+        <a href="ms-windows-store://pdp/?productid=9NBSHVGTKBZ4">
+          Microsoft Store
+        </a>
+      </div>
 
-  <div>
-    © 2026 KeenApps. Todos los derechos reservados.
-  </div>
+      <div>
+        © 2026 KeenApps. Todos los derechos reservados.
+      </div>
 
-</div>
+    </div>
 
 
   </footer>
+
+
+  <script src="../script.js"></script>
 
   <script>
     const contactForm = document.getElementById("contact-form");
@@ -345,4 +301,5 @@ content="Contacta con el servicio de soporte de KeenPassword Vault. Haz una preg
   </script>
 
 </body>
+
 </html>
